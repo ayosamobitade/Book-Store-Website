@@ -14,7 +14,7 @@ class CustomerTests(TestCase):
             password = 'testpass123'
         )
         self.assertEqual(user.username, 'samuel')
-        self.assertEqual(user.email, 'samuel4khrist')
+        self.assertEqual(user.email, 'samuel4khrist@email.com')
         self.assertTrue(user.is_active)
         self.assertFalse(user.is_staff)
         self.assertFalse(user.is_superuser)
@@ -27,7 +27,7 @@ class CustomerTests(TestCase):
             password = 'testpass123'
         )
         self.assertEqual(admin_user.username, 'superadmin')
-        self.assertEqual(admin_user.email, 'superuser@email.com')
+        self.assertEqual(admin_user.email, 'superadmin@email.com')
         self.assertTrue(admin_user.is_active)
         self.assertTrue(admin_user.is_staff)
         self.assertTrue(admin_user.is_superuser)
