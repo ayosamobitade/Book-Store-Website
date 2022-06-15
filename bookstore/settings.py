@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'bookstore3',
         'USER': 'bookstore',
-        'PASSWORD':'BAbatunde14,.',
+        'PASSWORD': 'BAbatunde14,.',
         
     }
 }
@@ -152,5 +152,5 @@ LOGOUT_REDIRECT_URL = 'home'
 MEDIA_URL = '/media/'
 MEDIA_URL = os.path.join(BASE_DIR, 'media/')
 
-STRIPE_TEST_PUBLISHABLE_KEY = os.environ.get('STRIPE_TEST_PUBLISHABLE_KEY')
-STRIPE_TEST_SECRET_KEY  = os.environ.get('STRIPE_TEST_SECRET_KEY')
+STRIPE_TEST_PUBLISHABLE_KEY = str(os.getenv('STRIPE_TEST_PUBLISHABLE_KEY'))
+STRIPE_TEST_SECRET_KEY  = str(os.getenv('STRIPE_TEST_SECRET_KEY'))
