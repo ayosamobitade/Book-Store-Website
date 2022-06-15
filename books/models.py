@@ -29,7 +29,7 @@ class Book(models.Model):
 
 class Review(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name = 'reviews')
-    review = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    review = models.ForeignKey(get_user_model(), on_delete=models.CASCADE,)
 
 
     def __str__(self):
