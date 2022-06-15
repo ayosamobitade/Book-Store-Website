@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
 
-    'debug_toolbar',ddd
+    'debug_toolbar',
 
     
     'pages.apps.PagesConfig',
