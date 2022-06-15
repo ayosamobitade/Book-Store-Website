@@ -19,3 +19,12 @@ class OrdersPageView(TemplateView):
         return context
 
 
+def charge(request):
+    if request.method == 'POST':
+        charge = stripe.Charge.create(
+            amount=3900, 
+            currency = 'usd', 
+            description = 'Purchase all books'
+            source = request.POST['stripeToken']
+            )
+            return render(request, 'order/charge.html')
