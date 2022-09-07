@@ -72,6 +72,8 @@ MIDDLEWARE = [
     'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
+
+
 ROOT_URLCONF = 'bookstore.urls'
 
 TEMPLATES = [
